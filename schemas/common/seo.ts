@@ -35,11 +35,5 @@ export default defineType({
       type: 'image',
       description: 'Share graphics will be cropped to 1200x630',
     }),
-    defineField({
-      title: 'Twitter Image',
-      name: 'twitterImage',
-      type: 'image',
-      description: 'Twitter share graphic. Falls back to Share Graphic if not set.',
-    }),
   ],
 })
