@@ -4,11 +4,58 @@ export default defineType({
   name: 'contact',
   title: 'Contact Page',
   type: 'document',
+  groups: [
+    {
+      name: 'content',
+      title: 'Content',
+      default: true,
+    },
+    {
+      name: 'seo',
+      title: 'SEO',
+    },
+  ],
   fields: [
+    defineField({
+      name: 'introSubtitle',
+      title: 'Intro Subtitle',
+      description: 'Text above the intro heading',
+      type: 'string',
+      group: 'content',
+    }),
+    defineField({
+      name: 'introTitle',
+      title: 'Intro Title',
+      description: 'Introduction title at the top of the page',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+          styles: [],
+          lists: [],
+          marks: {
+            decorators: [{title: 'Strong', value: 'strong'}],
+            annotations: [],
+          },
+        },
+      ],
+      group: 'content',
+    }),
+    defineField({
+      name: 'introCopy',
+      title: 'Intro Copy',
+      description: 'The text content of the introduction',
+      type: 'blockContent',
+      group: 'content',
+    }),
+
+    // SEO fields
     defineField({
       name: 'title',
       title: 'Title',
+      description: 'Only used to generate the slug.',
       type: 'string',
+      group: 'seo',
     }),
     defineField({
       name: 'slug',
@@ -21,22 +68,10 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'heroImage',
-      title: 'Hero Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-    }),
-    defineField({
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
-    }),
-    defineField({
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo',
+      group: 'seo',
     }),
   ],
   preview: {

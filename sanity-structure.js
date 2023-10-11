@@ -45,5 +45,8 @@ export const SanityStructure = (S, context) =>
       S.divider(),
       S.listItem()
         .title('Landing Page')
-        .child(S.document().schemaType('landing').documentId('landing').title('landing')),
+        .child(S.document().schemaType('landing').documentId('landing').title('Landing')),
+      S.listItem()
+        .title('Team Members')
+        .child(S.documentTypeList('teamMember').title('Team Members')),
     ])
