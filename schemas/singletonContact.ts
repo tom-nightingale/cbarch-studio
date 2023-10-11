@@ -49,6 +49,20 @@ export default defineType({
       group: 'content',
     }),
 
+    defineField({
+      name: 'team',
+      title: 'Team',
+      description: 'Team Members',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{type: 'teamMember'}],
+        },
+      ],
+      group: 'content',
+    }),
+
     // SEO fields
     defineField({
       name: 'title',
