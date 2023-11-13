@@ -43,30 +43,35 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'heroHeadline',
-      title: 'Hero Headline',
-      description: 'Text to accompany the hero image',
-      type: 'string',
-      group: 'content',
-    }),
-
-    // Project fields
-    defineField({
-      name: 'projectSubtitle',
-      title: 'Subtitle',
-      description: 'Text above the project title',
-      type: 'string',
-      group: 'content',
-    }),
-    defineField({
-      name: 'projectTitle',
+      name: 'title',
       title: 'Title',
       description: 'Project title',
       type: 'string',
       group: 'content',
     }),
 
-    // list items go here.
+    defineField({
+      name: 'projectLocation',
+      title: 'Location',
+      description: 'Location of the project',
+      type: 'string',
+      group: 'content',
+    }),
+    defineField({
+      name: 'projectValue',
+      title: 'Value',
+      description: 'Value of the project',
+      type: 'string',
+      group: 'content',
+    }),
+    defineField({
+      name: 'projectInvolvement',
+      title: 'Involvement',
+      description: 'Involvement in the project',
+      type: 'string',
+      group: 'content',
+    }),
+
     defineField({
       name: 'projectCopy',
       title: 'Copy',
@@ -121,13 +126,6 @@ export default defineType({
     defineField({
       name: 'orderRank',
       title: 'Order',
-      type: 'string',
-      group: 'seo',
-    }),
-    defineField({
-      name: 'title',
-      title: 'Title',
-      description: 'Only used to generate the slug.',
       type: 'string',
       group: 'seo',
     }),

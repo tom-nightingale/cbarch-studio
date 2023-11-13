@@ -28,18 +28,7 @@ export default defineType({
       name: 'introTitle',
       title: 'Intro Title',
       description: 'Introduction title at the top of the page',
-      type: 'array',
-      of: [
-        {
-          type: 'block',
-          styles: [],
-          lists: [],
-          marks: {
-            decorators: [{title: 'Strong', value: 'strong'}],
-            annotations: [],
-          },
-        },
-      ],
+      type: 'string',
       group: 'content',
     }),
     defineField({
@@ -80,6 +69,7 @@ export default defineType({
       options: {
         hotspot: true,
       },
+      group: 'content',
     }),
 
     // Meet the team

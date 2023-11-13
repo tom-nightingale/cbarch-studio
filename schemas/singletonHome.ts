@@ -60,18 +60,7 @@ export default defineType({
       name: 'copyTitle',
       title: 'Copy Title',
       description: 'H1',
-      type: 'array',
-      of: [
-        {
-          type: 'block',
-          styles: [],
-          lists: [],
-          marks: {
-            decorators: [{title: 'Strong', value: 'strong'}],
-            annotations: [],
-          },
-        },
-      ],
+      type: 'string',
       group: 'content',
     }),
     defineField({
@@ -89,6 +78,7 @@ export default defineType({
       options: {
         hotspot: true,
       },
+      group: 'content',
     }),
     defineField({
       name: 'projectsSubtitle',
@@ -102,7 +92,7 @@ export default defineType({
       title: 'Featured Projects',
       description: 'Select two featured projects',
       type: 'array',
-      validation: (Rule) => Rule.length(2),
+      validation: (Rule) => Rule.length(1),
       of: [
         {
           title: 'Project',
@@ -114,6 +104,20 @@ export default defineType({
           },
         },
       ],
+      group: 'content',
+    }),
+    defineField({
+      name: 'testimonial',
+      title: 'Testimonial',
+      description: 'Testimonial to display on the homepage',
+      type: 'string',
+      group: 'content',
+    }),
+    defineField({
+      name: 'testimonialAuthor',
+      title: 'Testimonial Author',
+      description: 'The author of the testimonial',
+      type: 'string',
       group: 'content',
     }),
     defineField({

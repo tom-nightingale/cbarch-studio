@@ -27,18 +27,7 @@ export default defineType({
       name: 'introTitle',
       title: 'Intro Title',
       description: 'Introduction title at the top of the page',
-      type: 'array',
-      of: [
-        {
-          type: 'block',
-          styles: [],
-          lists: [],
-          marks: {
-            decorators: [{title: 'Strong', value: 'strong'}],
-            annotations: [],
-          },
-        },
-      ],
+      type: 'string',
       group: 'content',
     }),
     defineField({
@@ -61,6 +50,33 @@ export default defineType({
         },
       ],
       group: 'content',
+    }),
+    defineField({
+      name: 'gallery',
+      title: 'Gallery',
+      type: 'array',
+      group: 'content',
+      validation: (Rule) => Rule.length(3),
+      of: [
+        {
+          name: 'image',
+          type: 'image',
+          title: 'Image',
+          options: {
+            hotspot: true,
+          },
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Alternative text',
+            },
+          ],
+        },
+      ],
+      options: {
+        layout: 'grid',
+      },
     }),
 
     // SEO fields
