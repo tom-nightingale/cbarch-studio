@@ -150,10 +150,13 @@ export default defineType({
   preview: {
     select: {
       title: 'title',
-      media: 'heroImage',
+      media: 'heroImages.0.asset',
     },
-    prepare(selection) {
-      return {...selection}
+    prepare({title, media}: any) {
+      return {
+        title: title,
+        media: media,
+      }
     },
   },
 })
