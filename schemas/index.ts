@@ -5,6 +5,7 @@ import singletonProjects from './singletonProjects'
 import singletonContact from './singletonContact'
 import singletonLanding from './singletonLanding'
 import project from './project'
+import testimonial from './testimonial'
 
 import seo from './common/seo'
 import blockContent from './common/blockContent'
@@ -21,4 +22,5 @@ export const schemaTypes = [
   blockContent,
   teamMember,
   seo,
+  testimonial,
 ]

@@ -79,6 +79,16 @@ export default defineType({
       type: 'blockContent',
       group: 'content',
     }),
+    defineField({
+      name: 'projectCopyImage',
+      title: 'Copy Image',
+      description: 'Image to accompany page copy',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      group: 'content',
+    }),
 
     defineField({
       name: 'gallery',
@@ -105,21 +115,6 @@ export default defineType({
       options: {
         layout: 'grid',
       },
-    }),
-
-    defineField({
-      name: 'testimonial',
-      title: 'Testimonial',
-      description: 'Project testimonial',
-      type: 'blockContent',
-      group: 'content',
-    }),
-    defineField({
-      name: 'testimonialAuthor',
-      title: 'Testimonial author',
-      description: 'Who wrote this testimonial?',
-      type: 'string',
-      group: 'content',
     }),
 
     /* SEO fields...*/
