@@ -72,36 +72,6 @@ export default defineType({
       group: 'content',
     }),
 
-    // Meet the team
-    defineField({
-      name: 'teamSubtitle',
-      title: 'Team Subtitle',
-      description: 'Text above the team members heading',
-      type: 'string',
-      group: 'content',
-    }),
-    defineField({
-      name: 'teamTitle',
-      title: 'Team Title',
-      description: 'Team title',
-      type: 'string',
-      group: 'content',
-    }),
-
-    defineField({
-      name: 'team',
-      title: 'Team',
-      description: 'Team Members',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{type: 'teamMember'}],
-        },
-      ],
-      group: 'content',
-    }),
-
     // SEO fields
     defineField({
       name: 'title',
