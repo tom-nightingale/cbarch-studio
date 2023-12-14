@@ -117,6 +117,33 @@ export default defineType({
       },
     }),
 
+    defineField({
+      name: 'featuredProjectGallery',
+      title: 'Featured Project Gallery',
+      type: 'array',
+      group: 'content',
+      of: [
+        {
+          name: 'image',
+          type: 'image',
+          title: 'Image',
+          options: {
+            hotspot: true,
+          },
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Alternative text',
+            },
+          ],
+        },
+      ],
+      options: {
+        layout: 'grid',
+      },
+    }),
+
     /* SEO fields...*/
     defineField({
       name: 'orderRank',
