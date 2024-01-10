@@ -17,6 +17,32 @@ export default defineType({
   ],
   fields: [
     defineField({
+      name: 'mobileHeroImages',
+      title: 'Mobile Hero Images',
+      type: 'array',
+      group: 'content',
+      of: [
+        {
+          name: 'image',
+          type: 'image',
+          title: 'Image',
+          options: {
+            hotspot: true,
+          },
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Alternative text',
+            },
+          ],
+        },
+      ],
+      options: {
+        layout: 'grid',
+      },
+    }),
+    defineField({
       name: 'heroImages',
       title: 'Hero Images',
       type: 'array',
