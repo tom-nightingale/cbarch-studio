@@ -48,10 +48,6 @@ export const SanityStructure = (S, context) =>
         .child(S.document().schemaType('contact').documentId('contact').title('Contact')),
       S.divider(),
       S.listItem()
-        .title('Landing Page')
-        .child(S.document().schemaType('landing').documentId('landing').title('Landing')),
-      S.divider(),
-      S.listItem()
         .title('Testimonials')
         .child(S.documentTypeList('testimonial').title('Testimonials')),
       S.divider(),

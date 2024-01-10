@@ -4,7 +4,6 @@ import singletonAbout from './singletonAbout'
 import singletonTeam from './singletonTeam'
 import singletonProjects from './singletonProjects'
 import singletonContact from './singletonContact'
-import singletonLanding from './singletonLanding'
 import project from './project'
 import testimonial from './testimonial'
 
@@ -14,7 +13,6 @@ import teamMember from './teamMember'
 
 export const schemaTypes = [
   singletonGlobal,
-  singletonLanding,
   singletonHome,
   singletonProjects,
   project,
