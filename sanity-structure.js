@@ -4,10 +4,10 @@ export const SanityStructure = (S, context) =>
   S.list()
     .title('CB Architecture')
     .items([
-      S.listItem()
-        .title('Global Settings')
-        .child(S.document().schemaType('global').documentId('global').title('Global Settings')),
-      S.divider(),
+      // S.listItem()
+      //   .title('Global Settings')
+      //   .child(S.document().schemaType('global').documentId('global').title('Global Settings')),
+      // S.divider(),
       S.listItem()
         .title('Home')
         .child(S.document().schemaType('home').documentId('home').title('Home')),
