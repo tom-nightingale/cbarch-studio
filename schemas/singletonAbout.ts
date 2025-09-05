@@ -105,6 +105,12 @@ export default defineType({
       group: 'content',
     }),
 
+    defineField({
+      title: 'Content Blocks',
+      name: 'contentBlocks',
+      type: 'contentBlocks',
+      group: 'content',
+    }),
     // SEO fields
     defineField({
       name: 'title',

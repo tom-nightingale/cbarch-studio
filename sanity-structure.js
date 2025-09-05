@@ -54,4 +54,14 @@ export const SanityStructure = (S, context) =>
       S.listItem()
         .title('Team Members')
         .child(S.documentTypeList('teamMember').title('Team Members')),
+      S.divider(),
+      S.listItem()
+        .title('Pages')
+        .schemaType('page')
+        .child(S.documentTypeList('page').title('Pages')),
+      S.divider(),
+      S.listItem()
+        .title('Navigation')
+        .schemaType('navigation')
+        .child(S.documentTypeList('navigation').title('Navigation')),
     ])

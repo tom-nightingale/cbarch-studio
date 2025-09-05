@@ -169,7 +169,12 @@ export default defineType({
         layout: 'grid',
       },
     }),
-
+    defineField({
+      title: 'Content Blocks',
+      name: 'contentBlocks',
+      type: 'contentBlocks',
+      group: 'content',
+    }),
     /* SEO fields...*/
     defineField({
       name: 'orderRank',

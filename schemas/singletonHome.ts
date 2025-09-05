@@ -107,6 +107,12 @@ export default defineType({
       group: 'content',
     }),
     defineField({
+      title: 'Content Blocks',
+      name: 'contentBlocks',
+      type: 'contentBlocks',
+      group: 'content',
+    }),
+    defineField({
       name: 'projectsSubtitle',
       title: 'Projects Subtitle',
       description: 'Text above the projects heading',
