@@ -62,6 +62,5 @@ export const SanityStructure = (S, context) =>
       S.divider(),
       S.listItem()
         .title('Navigation')
-        .schemaType('navigation')
-        .child(S.documentTypeList('navigation').title('Navigation')),
+        .child(S.document().schemaType('navigation').documentId('d78457a1-3a39-49e2-a48b-0598908a4d7d').title('Navigation')),
     ])

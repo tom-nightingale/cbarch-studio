@@ -11,12 +11,14 @@ export default defineType({
       title: 'Name',
       name: 'name',
       type: 'string',
+      readOnly: true,
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       title: 'Title',
       name: 'title',
       type: 'string',
+      readOnly: true,
       validation: (Rule) => Rule.required(),
     }),
     defineField({
