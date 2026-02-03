@@ -37,7 +37,41 @@ export default defineType({
       type: 'blockContent',
       group: 'content',
     }),
-
+    defineField({
+      name: 'officePhoneNumber',
+      title: 'Office Phone Number',
+      description: 'Office phone number. (Will default to mobile numbers if not present)',
+      type: 'string',
+      group: 'content',
+    }),
+    defineField({
+      name: 'addressLine1',
+      title: 'Address Line 1',
+      description: 'Address Line 1',
+      type: 'string',
+      group: 'content',
+    }),
+    defineField({
+      name: 'addressLine2',
+      title: 'Address Line 2',
+      description: 'Address Line 2',
+      type: 'string',
+      group: 'content',
+    }),
+    defineField({
+      name: 'city',
+      title: 'City',
+      description: 'City',
+      type: 'string',
+      group: 'content',
+    }),
+    defineField({
+      name: 'postcode',
+      title: 'Postcode',
+      description: 'Postcode',
+      type: 'string',
+      group: 'content',
+    }),
     defineField({
       name: 'team',
       title: 'Team',
